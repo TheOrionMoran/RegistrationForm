@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start:dev": "vue-cli-service build --mode=development"
+    "start:dev": "vue-cli-service build --mode development"
   },
   "dependencies": {
     "@vuelidate/core": "^2.0.0-alpha.40",
