@@ -1,0 +1,132 @@
+@font-face 
+    font-family: 'Roboto'
+    src: url(fonts/Roboto.ttf)
+
+$green: #42b983
+$black: #213547
+
+.app
+    font-family: 'Roboto'
+    display: flex
+    justify-content: center
+    color: $black
+
+    .main
+        display: flex
+        flex-direction: row
+        justify-content:  space-between
+        max-width: 750px
+        flex-wrap: wrap
+    
+h1
+    font-family: 'Roboto'
+    width: 100%
+    border-bottom: 3px solid $black
+
+.form
+    min-height: 40px
+    display: flex
+    width: 350px
+    border-radius: 3px
+    overflow: hidden
+    margin-bottom: 30px
+
+    span
+        color: red
+    
+    .radioWrapper
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border: 3px solid $green
+        flex: 1
+    .pWrapper
+        background: $green
+        display: flex
+        align-items: center
+
+        p
+            padding: 0 10px
+            margin: 0
+            color: white
+            white-space: nowrap
+            min-width: 70px
+            text-align: center
+
+    input
+        border: 0
+        border-bottom: 3px solid $green
+        outline: none
+        font-size: 20px
+        flex: 1
+
+    .select1
+        border: 0
+        border: 3px solid $green
+        outline: none
+        font-size: 17px
+        height: 70px
+        flex: 1
+        max-width: 225px
+    .select2
+        border: 0
+        border: 3px solid $green
+        outline: none
+        font-size: 17px
+        flex: 1
+        max-width: 219px
+
+button
+    width: 100%
+    font-size: 30px
+    background: $green
+    border: 0
+    border-radius: 3px
+    color: white
+    padding: 10px
+    cursor: pointer
+    border: 2px solid white
+    transition: 0.5s
+    border: 2px solid $green
+    &:hover
+        background: none
+        color: $green
+.error
+    position: fixed
+    left: 10px
+    background: #ff000040
+    border-radius: 3px
+    width: 300px
+    
+    p
+        text-align: center
+        color: white
+.accept
+    position: fixed
+    left: 10px
+    background: #42b98391
+    border-radius: 3px
+    width: 300px
+    
+    p
+        text-align: center
+        color: white
+
+.bounce-enter-active 
+    animation: bounce-in .5s
+
+.bounce-leave-active 
+    animation: bounce-in .5s reverse
+
+@keyframes bounce-in 
+  0% 
+    transform: scale(0)
+  
+  50% 
+    transform: scale(1.5)
+  
+  100% 
+    transform: scale(1)
+  
+
+        
